@@ -1,0 +1,90 @@
+# Basic Rules for Any Cursor Project
+
+## Meta
+Read .cursorrules when unsure about rules or when explicitly requested
+If cursorrules is changed, update current knowledge
+
+## Planning: Question Files
+Question documents: <question> <y> or <n> format, choose option based on recommendation, keep complex questions on top separated from obvious ones
+When told '<file>.txt explanations', if 'q' follows y/n, add tabbed functionality explanations under the question, make text ALL CAPS
+When told '<file>.txt opinions', if 'w' follows y/n, add tabbed reasoning explanations under the question, make text ALL CAPS
+When told '<file>.txt all operations', apply both explanations and opinions
+Keep explanations and opinions concise but complete
+
+## Planning: Specification Files
+Specification documents: categorize specifications, one per line, one blank line between categories
+When told '<file>.txt specifications' create a new specification document
+Naming convention: <category>_specifications.txt
+
+## File Organization
+Place new files in root unless matching folder is obvious
+Use descriptive file names that clearly indicate their purpose
+Keep documentation files organized by topic/phase
+Read existing files only when explicitly requested or when context is critical
+
+## Code Quality
+Use meaningful variable and function names (avoid abbreviations)
+Keep functions focused on a single responsibility
+Follow language-specific style guides (PEP 8 for Python, ESLint for JavaScript, etc.)
+Adhere to industry-standard best practices and conventions for all languages and frameworks used in the project
+Use type hints/annotations when available
+Write self-documenting code (code should explain what it does)
+Write docstrings for public APIs and complex functions only
+
+## Error Handling
+Always handle exceptions explicitly with try/except blocks
+Log errors with appropriate log levels
+Include context in error messages (what operation failed, why)
+Never silently catch exceptions without logging
+Use custom exception classes for domain-specific errors
+
+## Security
+Use environment variables for all sensitive configuration (API keys, tokens, secrets)
+Validate all user inputs to prevent injection attacks
+Use parameterized queries for database operations
+Never hardcode credentials or API keys in code
+Sanitize file paths when processing user uploads
+
+## Testing
+Write tests when explicitly requested
+Use appropriate testing frameworks for the language
+
+## Performance
+Process large files in chunks to avoid memory issues
+Use async operations for I/O-bound tasks when available
+Cache frequently accessed data when appropriate
+Profile code before optimizing (measure first)
+
+## Code Organization
+Organize code into logical modules
+Keep business logic separate from framework code
+Use configuration files for settings that change between environments
+Create separate files for different feature categories
+Use dependency injection for testability
+
+## User Experience
+Provide clear, actionable error messages to users
+Show progress indicators for long-running operations
+Respect platform-specific limits (message length, file size, etc.)
+Break long responses into manageable chunks
+
+## Git & Version Control
+Write clear, descriptive commit messages
+Commit related changes together
+Use .gitignore to exclude sensitive files and dependencies
+Create feature branches for major changes
+Never commit API keys, tokens, or user data
+
+## Dependencies
+Pin dependency versions in dependency files
+Use virtual environments/package managers for projects
+Document why each dependency is needed
+Regularly update dependencies for security patches
+Don't add dependencies without understanding what they do
+
+## Comments & Documentation
+Write comments explaining "why" not "what" (code should be self-documenting)
+Document complex algorithms or business logic only when necessary
+Keep README.md updated with setup and usage instructions
+Don't comment obvious code (variable assignments, simple operations)
+

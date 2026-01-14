@@ -1,0 +1,14 @@
+Id: 1
+Title: 'Debate Bot'
+Languages: 'JavaScript, Python, TikTok'
+Description: 
+'A revenue generating service using third-party applcations such as Minecraft, Tikfinity, and TikTok livestreaming
+
+The stream depicts a battle between two bots, each representing one side of a debate.
+Viewers can set back the progress of either of the bots through donations and interactions.
+The most profitable debate was 'Kamala Harris' vs. 'Donald Trump.'
+
+Through the use of a Python mouse/keyboard automation script, the service was able to run optimally 24/7.
+Viewer count was tracked and the stream-reset algorithm was tailored to gather 200+ concurrent viewers.
+
+Plans to scale to multiple computers and accounts weren't plausible due to TikTok's guidelines.'

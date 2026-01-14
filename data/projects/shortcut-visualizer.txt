@@ -1,0 +1,11 @@
+Id: 2
+Title: 'Shortcut Visualizer'
+Languages: 'Next.js, TypeScript, React, CSS'
+Description: '
+A web app that simplifies navigating keyboard shortcuts
+
+Shortcut Visualizer provides an interactive keyboard higlighting current keys used in shortcuts with brief descriptions on hover.
+There is a search functionality as well as a filtering functionality to see which combinations any key is used in.
+
+The user pastes in their keyboard_shortcuts.json or selects from our serverside copy of application shortcuts.
+'

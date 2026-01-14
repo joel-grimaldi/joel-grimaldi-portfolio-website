@@ -6,6 +6,10 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   imageUrl?: string;
+  problem?: string;
+  solution?: string;
+  challenges?: string[];
+  results?: string;
 }
 
 export type ContactItemType = "email" | "link" | "download";

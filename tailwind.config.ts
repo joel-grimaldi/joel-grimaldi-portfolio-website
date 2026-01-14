@@ -12,9 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         accent: {
-          DEFAULT: "#2563eb",
-          hover: "#1d4ed8",
-          light: "#3b82f6",
+          DEFAULT: "#16a34a",
+          hover: "#15803d",
+          light: "#22c55e",
+          dark: "#0d2818",
         },
       },
     },

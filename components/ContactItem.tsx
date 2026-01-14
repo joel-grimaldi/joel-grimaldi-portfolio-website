@@ -9,7 +9,7 @@ export default function ContactItemComponent({ item }: ContactItemProps) {
   const isExternalLink = item.type === "link";
 
   const baseClasses = isDownload
-    ? "inline-flex items-center px-4 py-2 bg-accent hover:bg-[#1d4ed8] text-white rounded-md transition-colors"
+    ? "inline-flex items-center px-4 py-2 bg-accent hover:bg-accent-hover text-white rounded-md transition-colors"
     : "text-accent hover:text-accent-light transition-colors";
 
   const linkProps = isExternalLink

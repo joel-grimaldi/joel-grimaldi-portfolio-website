@@ -16,7 +16,17 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <Link href={`/projects/${id}`} className="block mb-8 last:mb-0">
-      <div className="bg-gray-800 rounded-lg overflow-hidden hover:bg-gray-750 transition-colors border border-gray-700 cursor-pointer flex flex-col md:flex-row">
+      <div className="bg-zinc-900 rounded-lg overflow-hidden hover:bg-zinc-800 transition-colors border border-zinc-800 cursor-pointer flex flex-col md:flex-row">
+        <div className="p-6 flex flex-col flex-grow">
+          <h2 className="text-2xl font-semibold mb-3 text-foreground">{title}</h2>
+          <p className="text-gray-300 mb-4 leading-relaxed flex-grow">
+            {description.split('\n')[0]}
+          </p>
+
+          <div className="mb-4">
+            <TechnologyTags technologies={technologies} variant="default" />
+          </div>
+        </div>
         {imageUrl && (
           <div className="relative w-full md:w-1/3 h-64 md:h-auto">
             <Image
@@ -27,20 +37,6 @@ export default function ProjectCard({
             />
           </div>
         )}
-        <div className="p-6 flex flex-col flex-grow">
-          <h2 className="text-2xl font-semibold mb-3 text-foreground">{title}</h2>
-          <p className="text-gray-300 mb-4 leading-relaxed flex-grow">
-            {description.split('\n')[0]}
-          </p>
-
-          <div className="mb-4">
-            <TechnologyTags technologies={technologies} variant="default" />
-          </div>
-
-          <div className="flex gap-4 text-accent hover:text-accent-light transition-colors text-sm font-medium">
-            <span>View Details →</span>
-          </div>
-        </div>
       </div>
     </Link>
   );

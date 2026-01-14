@@ -2,7 +2,7 @@ Id: 1
 Title: 'Debate Bot'
 Languages: 'JavaScript, Python, TikTok'
 Description: 
-'A revenue generating service using third-party applcations such as Minecraft, Tikfinity, and TikTok livestreaming
+'A revenue generating service using Minecraft, Tikfinity, and TikTok livestreaming
 
 The stream depicts a battle between two bots, each representing one side of a debate.
 Viewers can set back the progress of either of the bots through donations and interactions.
